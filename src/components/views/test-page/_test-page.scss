@@ -1,0 +1,27 @@
+.Test{
+    display: flex;
+    border: solid 5px black;
+    margin: 10px;
+    min-height: 500px;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.box{
+    background-color: black;
+    color: aliceblue;
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:nth-child(2){
+    flex-grow: 2;
+}

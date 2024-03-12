@@ -1,16 +1,16 @@
-import Home from "./views/Home_Page";
-import About from "./views/About_Page";
-import NavBar from "./router/NavBar";
-import { Route, Routes } from "react-router-dom";
-function App(){
-  return(
+import NavBar from "./components/views/navbar";
+import Footer from "./components/views/footer";
+import { Routes_dom } from "./Routes";
+import "./styles/_app.scss";
+function App() {
+  return (
     <div className="App">
       <NavBar />
-      <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-      </Routes>
-  </div>
-  )
+      <div className="content">
+        <Routes_dom />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 export default App;
